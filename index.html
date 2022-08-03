@@ -1,0 +1,243 @@
+<!DOCTYPE html> <!--documento tipo html 5-->
+<html lang="en"> <!--el atributo lang nos indica el idioma que trabajaremos en el doc, en este  caso es ingles-->
+<head> <!--cabecera, metaetiquetas, esto es relevante para las busqueda en los motores de busqueda-->
+  <meta charset="UTF-8"> <!--juego de caracteres, evitamos tener que colocar caracteres especiales-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--adaptado a ese navegador aunque no es necesario-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adapta el ancho al del dispositivo-->
+  <title>Aprendiendo HTML</title><!--titulo referente a lo que buscara el usuario y no revase 55-65 caracteres, aparece en la busqueda como un titulo-->
+  <meta name="description" content="en esta pagina estamos aprendiendo los fundamentos de html con @jonmircha"> <!--no mas de 155 caracteres muy relevante para hacer CEO en el codigo, aparece en la busqueda como el texto de descripcionde la pagina, y cada hoja de tus vistas deberian tener un titulo y descripcion diferenetes alusivas a lo que encontrara el usuario en la vista-->
+  <style>
+    h2{
+      color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+  <!--este es un comentario
+  Enlaces de la documentación de HTML:
+  - https://www.w3.org/html/
+  - https://html.spec.whatwg.org/
+  - https://www.w3.org/blog/news/archives...
+  - https://developer.mozilla.org/es/docs...
+  - https://htmlreference.io/-->
+  <p>Hola, escribiendo mi primer documento html</p>
+  <p>Aprendiendo sobre diseño web</p>
+  <hr>
+  <h2>Tipos de encabezados en HTML</h2>
+  <h1>Encabezado 1</h1><!--solo debo tener un h1-->
+  <h2>Encabezado 2</h2>
+  <h3>Encabezado 3</h3>
+  <h4>Encabezado 4</h4>
+  <h5>Encabezado 5</h5>
+  <h6>Encabezado 6</h6>
+  <hr>
+  <h2>Etqietas basicas HTML</h2>
+  <p>Un parrafo</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure earum iste cupiditate quisquam pariatur molestias alias optio voluptas saepe, veniam fugiat fuga, ipsum debitis doloremque ipsam facilis, beatae sapiente consectetur.</p>
+  <p>Palabras en : <b>negrita</b>, <i>italica</i>, <u>subrayado</u>, e=mc<sup>2</sup>, H<sub>2</sub>O,
+  <mark> marca texto</mark>, <small>letras pequeñas</small></p> <!--etiquetas basicas b es negrita, i es italica, u es subrayado, sup es elevado, sub es subindice, mark es resaltado y smal es letras pequeñas-->
+  <hr>
+  <h2>Etiquetas Semánticas HTML</h2>
+  <p><strong>Este texto es importante</strong>.<em>Este texto hace enfasis</em></p><!--Semanticas, dan cierto significado. strong negrita importante, em cita en italica, blockquote le da los margenes a la cita y cita es para el nombre del autor-->
+  <blockquote>Yo solo se que no se nada</blockquote>
+  <cita>Socrates</cita>
+  <hr>
+  <h2>Etqietas de salto HTML</h2>
+  <!--etiquetas de salto br es un enter simple y hr es un salto que separa secciones-->
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Quam, dignissimos labore. Ducimus culpa itaque ullam delectus ratione, exercitationem pariatur at minus, dignissimos nulla quisquam dolorem accusantium illum facilis ad molestiae?. Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Optio ad eius quam a quidem, fugit animi atque commodi in expedita nesciunt alias vitae, quia reiciendis eligendi, cupiditate qui dicta eaque.</p>
+  <h2>Etqietas de formateo</h2>
+  <!--etiquetas de formteo relevantes, tenermos el pre que respeta el formato del texto que este dentro de dicha etiqueta y la etiqueta code que permite que el texto se veo en formato codigo, el caracter de apertura y cierre dee la etiqueta title tuve que colocarla como carater especial-->
+  <p>
+    <pre>
+    Tareas por hacer
+    -HTML
+      -Erminar de bgrabar las seciones de este curso
+      -termianr de grabar
+    -CSS
+      -comenzar a grabar
+      -editar un solo video
+    </pre>
+  </p>
+  <p>
+    <code>
+      Este texto esta en formato de codigo
+    </code>
+  </p>
+  <p>
+    <pre>
+      <code>
+        import React from "react";
+        import Title from "./Title";
+
+        function App {
+          return &lt;Title /&gt;;
+        }
+      </code>
+    </pre>
+  </p>
+  <hr>
+  <h2>Etiquetas semánticas estructurales</h2>
+  <div>Es una etiqueta contenedor que no tiene semantica</div>
+  <header> cabecera de un sitio web o una seccion</header>
+  <main>define la seccion principal del documento, solo puede existiruna etiqueta main por documento</main>
+  <footer>Pie de pagona de un sitio web o una seccion</footer>
+  <nav>representa una navegacion</nav>
+  <article>Representa uan seccion de autocontenido que por si sola se explica</article>
+  <aside>Complemento secundario, ejemplo, articulos relacionados</aside>
+  <section>Representa una seccion de contenido genérico</section>
+  <address>Representa una dirección FÍsica</address>
+  <hr>
+  <h2>Etiquetas de bloque vs etiquetas de linea</h2>
+  <div style="background-color: yellow;">la etiqueta de bloque por excelencia es la div, es aquella que genera saltos de linea con sus etiquetas hermanas</div>
+  <span style="background-color:aquamarine">la etiquete de linea por exclencia es span, es aquella que solo ocupa el espacio necesario que ocupa su contenido</span>
+  <span>Hola soy otra span</span>
+  <hr>
+  <h2>Etiquetas CSS</h2>
+  <pre>
+    -dentro del la etiqueta pero con  una atributo style.
+    -Con uan etiqueta style, en la cabecera o en el body.
+    -con una etiqueta link donde vinculare este index con la hoja de estilos css
+  </pre>
+  <hr>
+  <h2>Scripts en HTML</h2>
+  <script>
+    console.log("hola estamos aprendiendo HTML")
+  </script>
+  <!--hay dos formas con la etiqueta script y alli inhresariamos el comando o vinculando la hoja de script con este index-->
+  <script src="assets/codigos.js"></script>
+  <hr>
+  <h2>Imagenes</h2><!--Puedo coger lo que sea y meterlo en src-->
+  <img src="img/periodic-table-of-html-elements.png" alt="Tabla perdiodica de los elementos html">
+  <img src="img/puesta-sol.jpg" alt="puesta en la playa con kenay">
+  <img src="img/this-is-fine.gif" alt="todo ira bien">
+  <img src="img/kEnAi.svg" alt="kenay">
+  <img src="img/bextlan-logos.svg" alt="logo del antigue sitio">
+  <img src="img/fox-svgrepo-com.svg" alt="logo zorrito">
+  <hr>
+  <h2>Figuras</h2> 
+  <figure>
+    <img src="img/periodic-table-of-html-elements.png" alt="Tabla perdiodica de los elementos html">
+    <figcaption>Tabla de los elementos HTML</figcaption>
+  </figure> 
+  <hr>
+  <h2>Lista en HTML</h2><!--Tenemos listas ordenadas ol, el atributo start puede indicar de donde parte el atributo style el tipo de lista y el atributo reversed que se ordende al reves,listas desordenadas ul que son viñetas el b¡cual dependiendo del atributo cambia el dibujito de la misma, si es type circle es ciruculo y si es type square es cuadrado, tambien tenemos la lista de definicion dl que son para glosarios con las etieutas dt que es el ermino y dd que es la definicion de dicho termino-->
+  <h3>Lista ordenadas</h3>
+  <h4>Estaciones del año</h4>
+  <ol>
+    <li>priamvera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+   <ol start="3">
+    <li>priamvera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+   <ol reversed>
+    <li>priamvera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+   <ol type="I">
+    <li>priamvera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <h3>Listas desordenadas</h3>
+  <h4>Cosas por hacer</h4>
+  <ul type="square">
+    <li>terminar de grabar</li>
+    <li>editar video</li>
+    <li>subir</li>
+  </ul>
+  <ul type="circle">
+    <li>terminar de grabar</li>
+    <li>editar video</li>
+    <li>subir</li>
+  </ul>
+  <ul >
+    <li>terminar de grabar</li>
+    <li>editar video</li>
+    <li>subir</li>
+  </ul>
+  <h3>Listas de definicion</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Es un lenguaje de marcado que define el con tenido de la web</dd>
+    <dt>CSS</dt>
+    <dd>Es un lenguaje de definición de estilos</dd>
+    <dt>JavaScript</dt>
+    <dd>Es el lenguaje de la web</dd>
+  </dl>
+  <hr>
+  <h2>Tablas</h2><!--Se emplea la etiqueta table para la tabla en si, el tr para fila, y td para cada columna-->
+  <table>
+    <tr>
+      <td>Nombre</td>
+      <td>Constelación</td>
+      <td>Tipo</td>
+    </tr>
+    <tr>
+      <td>Ikki</td>
+      <td>Fenix</td>
+      <td>Bronce</td>
+    </tr>
+    <tr>
+      <td>Shaina</td>
+      <td>Ofiuco</td>
+      <td>Plata</td>
+    </tr>
+    <tr>
+      <td>Saga</td>
+      <td>Geminis</td>
+      <td>Dorado</td>
+    </tr>
+  </table>
+  <br><br><br>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">
+          Tabla de los santos de atena
+        </th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Constelación</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ikki</td>
+        <td>Fenix</td>
+        <td>Bronce</td>
+      </tr>
+      <tr>
+        <td>Shaina</td>
+        <td rowspan="2">Ofiuco</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Odiseo</td>
+        <td>Dorado</td>
+      </tr>
+      <tr>
+        <td>Saga</td>
+        <td>Geminis</td>
+        <td>Dorado</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3"><small>Saint Sealla fue creado por Masammi Kurumada</small></th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
