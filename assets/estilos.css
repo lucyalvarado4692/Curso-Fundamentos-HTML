@@ -8,3 +8,10 @@ img{
   max-width: 100%;
   height: auto;
 }
+html{
+  scroll-behavior: smooth;
+}
+iframe{
+  width: 50%;
+  height: auto;
+}
